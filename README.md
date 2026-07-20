@@ -38,16 +38,16 @@ MODELS = { PTT5-base, mT5-base}
 
 DATASETS = { train_processed.csv, aug_sr.csv, aug_oversampling.csv}
 
-# Pré-processamento
+# Pré-processamento (preprocessing.ipynb)
 
 Manipulação dos conjuntos de treino e teste da competição.
 
 
-# Data Augmentation
+# Data Augmentation (data_augmentation_*.ipynb)
 
 Cada notebook implementa o respectivo método de seu título sobre os conjuntos pré-processados.
 
-# Hyperparameters Search (HPS)
+# Hyperparameters Search (HPSearch_*.ipynb)
 
 Otimizar: learning rate, warmup ratio, weight decay.
 
@@ -57,7 +57,7 @@ Para cada combinação MODELS x DATASETS:
 	
 A configuração da trail com melhor Medida-F média dentre as cross-validations é a escolhida para a próxima etapa.
 
-# Baseline
+# Fine-tune and Test (final_*.ipynb)
 
 Para cada combinação MODELS x DATASETS:
 Utiliza os Hiperparâmetros da etapa anterior para o ajuste fino, com o respectivo conjunto de treino;
